@@ -12,7 +12,7 @@ import AVFoundation
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var starField: SKEmitterNode!
     var ufoNode = ["goodUFO", "badUFO"]
-    var createTimer: Timer?
+    var createTimer = [Timer]()
     var player: AVAudioPlayer!
     var isGameOver = false
     var isEmpty = false
@@ -307,7 +307,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func gameOver() {
         isGameOver = true
         
-        createTimer?.invalidate()
+        createTimer.forEach { $0.invalidate() }
         
         let gameOverLabel = createLabel(position: CGPoint(x: 500, y: 350), text: "GAME OVER", alignment: .center)
         gameOverLabel.name = "GAME OVER"
@@ -346,6 +346,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
         
-        createTimer = Timer.scheduledTimer(timeInterval: TimeInterval(enemyTimer), target: self, selector: #selector(createUfo), userInfo: nil, repeats: true)
+        let timer1 = Timer.scheduledTimer(timeInterval: TimeInterval(enemyTimer), target: self, selector: #selector(createUfo), userInfo: nil, repeats: true)
+        
+        let timer2 = Timer.scheduledTimer(timeInterval: TimeInterval(enemyTimer + 2), target: self, selector: #selector(createUfo), userInfo: nil, repeats: true)
+        
+        let timer3 = Timer.scheduledTimer(timeInterval: TimeInterval(enemyTimer + 4), target: self, selector: #selector(createUfo), userInfo: nil, repeats: true)
+        
+        createTimer = [timer1, timer2, timer3]
     }
 }

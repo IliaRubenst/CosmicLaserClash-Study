@@ -1,2 +1,11 @@
-Cosmic Laser Clash/Content/.DS_Store
+#System
+.DS_Store
+
+#Various settings
 *.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+#Other
+*.xcuserstate
+.DS_Store
