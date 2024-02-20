@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496E3E712B83D31E0034789A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E3E702B83D31E0034789A /* SoundManager.swift */; };
+		497495EB2A76764B008CE691 /* UfoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497495EA2A76764B008CE691 /* UfoNode.swift */; };
+		497495ED2A76B39B008CE691 /* LaserNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497495EC2A76B39B008CE691 /* LaserNode.swift */; };
+		497495EF2A76F239008CE691 /* laser-shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 497495EE2A76F239008CE691 /* laser-shoot.mp3 */; };
+		497495F12A76F3D9008CE691 /* laser-reload.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 497495F02A76F3D9008CE691 /* laser-reload.mp3 */; };
+		497495F32A76F59C008CE691 /* laser-empty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 497495F22A76F59C008CE691 /* laser-empty.mp3 */; };
+		4984CF0A2A762FFB0042D3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984CF092A762FFB0042D3F2 /* AppDelegate.swift */; };
+		4984CF0C2A762FFB0042D3F2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4984CF0B2A762FFB0042D3F2 /* GameScene.sks */; };
+		4984CF102A762FFB0042D3F2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984CF0F2A762FFB0042D3F2 /* GameScene.swift */; };
+		4984CF122A762FFB0042D3F2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984CF112A762FFB0042D3F2 /* GameViewController.swift */; };
+		4984CF152A762FFB0042D3F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4984CF132A762FFB0042D3F2 /* Main.storyboard */; };
+		4984CF172A762FFD0042D3F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4984CF162A762FFD0042D3F2 /* Assets.xcassets */; };
+		4984CF1A2A762FFD0042D3F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4984CF182A762FFD0042D3F2 /* LaunchScreen.storyboard */; };
+		4984CF232A7634B80042D3F2 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4984CF222A7634B70042D3F2 /* starfield.sks */; };
+		4984CF272A764ADD0042D3F2 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4984CF262A764ADD0042D3F2 /* explosion.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		496E3E702B83D31E0034789A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		497495EA2A76764B008CE691 /* UfoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoNode.swift; sourceTree = "<group>"; };
+		497495EC2A76B39B008CE691 /* LaserNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaserNode.swift; sourceTree = "<group>"; };
+		497495EE2A76F239008CE691 /* laser-shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "laser-shoot.mp3"; path = "Content/laser-shoot.mp3"; sourceTree = "<group>"; };
+		497495F02A76F3D9008CE691 /* laser-reload.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "laser-reload.mp3"; path = "Content/laser-reload.mp3"; sourceTree = "<group>"; };
+		497495F22A76F59C008CE691 /* laser-empty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "laser-empty.mp3"; path = "Content/laser-empty.mp3"; sourceTree = "<group>"; };
+		4984CF062A762FFB0042D3F2 /* Cosmic Laser Clash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cosmic Laser Clash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4984CF092A762FFB0042D3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4984CF0B2A762FFB0042D3F2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		4984CF0F2A762FFB0042D3F2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4984CF112A762FFB0042D3F2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4984CF142A762FFB0042D3F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4984CF162A762FFD0042D3F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4984CF192A762FFD0042D3F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4984CF222A7634B70042D3F2 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = starfield.sks; path = Content/starfield.sks; sourceTree = "<group>"; };
+		4984CF262A764ADD0042D3F2 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = explosion.sks; path = Content/explosion.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4984CF032A762FFB0042D3F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4984CEFD2A762FFB0042D3F2 = {
+			isa = PBXGroup;
+			children = (
+				4984CF082A762FFB0042D3F2 /* Cosmic Laser Clash */,
+				4984CF072A762FFB0042D3F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4984CF072A762FFB0042D3F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4984CF062A762FFB0042D3F2 /* Cosmic Laser Clash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4984CF082A762FFB0042D3F2 /* Cosmic Laser Clash */ = {
+			isa = PBXGroup;
+			children = (
+				4984CF092A762FFB0042D3F2 /* AppDelegate.swift */,
+				4984CF0B2A762FFB0042D3F2 /* GameScene.sks */,
+				4984CF0F2A762FFB0042D3F2 /* GameScene.swift */,
+				497495EA2A76764B008CE691 /* UfoNode.swift */,
+				497495EC2A76B39B008CE691 /* LaserNode.swift */,
+				4984CF112A762FFB0042D3F2 /* GameViewController.swift */,
+				496E3E702B83D31E0034789A /* SoundManager.swift */,
+				4984CF132A762FFB0042D3F2 /* Main.storyboard */,
+				4984CF162A762FFD0042D3F2 /* Assets.xcassets */,
+				4984CF182A762FFD0042D3F2 /* LaunchScreen.storyboard */,
+				4984CF222A7634B70042D3F2 /* starfield.sks */,
+				4984CF262A764ADD0042D3F2 /* explosion.sks */,
+				497495EE2A76F239008CE691 /* laser-shoot.mp3 */,
+				497495F02A76F3D9008CE691 /* laser-reload.mp3 */,
+				497495F22A76F59C008CE691 /* laser-empty.mp3 */,
+			);
+			path = "Cosmic Laser Clash";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4984CF052A762FFB0042D3F2 /* Cosmic Laser Clash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4984CF1D2A762FFD0042D3F2 /* Build configuration list for PBXNativeTarget "Cosmic Laser Clash" */;
+			buildPhases = (
+				4984CF022A762FFB0042D3F2 /* Sources */,
+				4984CF032A762FFB0042D3F2 /* Frameworks */,
+				4984CF042A762FFB0042D3F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cosmic Laser Clash";
+			productName = "Milestone16-18";
+			productReference = 4984CF062A762FFB0042D3F2 /* Cosmic Laser Clash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4984CEFE2A762FFB0042D3F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					4984CF052A762FFB0042D3F2 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4984CF012A762FFB0042D3F2 /* Build configuration list for PBXProject "Cosmic Laser Clash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4984CEFD2A762FFB0042D3F2;
+			productRefGroup = 4984CF072A762FFB0042D3F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4984CF052A762FFB0042D3F2 /* Cosmic Laser Clash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4984CF042A762FFB0042D3F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4984CF152A762FFB0042D3F2 /* Main.storyboard in Resources */,
+				497495F12A76F3D9008CE691 /* laser-reload.mp3 in Resources */,
+				497495F32A76F59C008CE691 /* laser-empty.mp3 in Resources */,
+				4984CF0C2A762FFB0042D3F2 /* GameScene.sks in Resources */,
+				4984CF172A762FFD0042D3F2 /* Assets.xcassets in Resources */,
+				4984CF272A764ADD0042D3F2 /* explosion.sks in Resources */,
+				497495EF2A76F239008CE691 /* laser-shoot.mp3 in Resources */,
+				4984CF232A7634B80042D3F2 /* starfield.sks in Resources */,
+				4984CF1A2A762FFD0042D3F2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4984CF022A762FFB0042D3F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4984CF102A762FFB0042D3F2 /* GameScene.swift in Sources */,
+				4984CF122A762FFB0042D3F2 /* GameViewController.swift in Sources */,
+				497495ED2A76B39B008CE691 /* LaserNode.swift in Sources */,
+				497495EB2A76764B008CE691 /* UfoNode.swift in Sources */,
+				4984CF0A2A762FFB0042D3F2 /* AppDelegate.swift in Sources */,
+				496E3E712B83D31E0034789A /* SoundManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4984CF132A762FFB0042D3F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4984CF142A762FFB0042D3F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4984CF182A762FFD0042D3F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4984CF192A762FFD0042D3F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4984CF1B2A762FFD0042D3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4984CF1C2A762FFD0042D3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4984CF1E2A762FFD0042D3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilia.Cosmic-Laser-Clash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4984CF1F2A762FFD0042D3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilia.Cosmic-Laser-Clash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4984CF012A762FFB0042D3F2 /* Build configuration list for PBXProject "Cosmic Laser Clash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4984CF1B2A762FFD0042D3F2 /* Debug */,
+				4984CF1C2A762FFD0042D3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4984CF1D2A762FFD0042D3F2 /* Build configuration list for PBXNativeTarget "Cosmic Laser Clash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4984CF1E2A762FFD0042D3F2 /* Debug */,
+				4984CF1F2A762FFD0042D3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4984CEFE2A762FFB0042D3F2 /* Project object */;
+}
